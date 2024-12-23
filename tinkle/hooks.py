@@ -144,6 +144,22 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+    "Sales Order": {
+        "after_insert" : "tinkle.tinkle.custom.file.create_todo_entry" 
+    }
+}
+doctype_js = {
+    "Sales Invoice": "public/js/sales_invoice.js"
+
+}
+
+# doc_events = {
+#     "Item" : {
+#         "after_save" : "tinkle.tinkle.custom.file.create_todo_from_stock_items"
+
+#     }
+
 
 # Scheduled Tasks
 # ---------------
